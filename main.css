@@ -4,7 +4,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+/*need to set home wrapper same top as height of header for fixed head to work.*/
 #home {
   position:relative;
   top:50px;
