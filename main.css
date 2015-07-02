@@ -4,13 +4,16 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-/*need to set home wrapper same top as height of header for fixed head to work.*/
+
+
+
+
 #home {
   position:relative;
   top:50px;
-  min-height: 100%;
   width: 100%;
   overflow: hidden;
+  
 }
 
 body {
@@ -31,52 +34,55 @@ header {
   padding: 5px;
 }
 
-#menu {
-  position: absolute;
-  top: 5px;
-  right: 0;
-  padding: 5px;
-  width:60px;
-}
+
 
 #hero_wrapper {
   position:relative;
-  height: 550px;
+  display: block;
+  margin: auto;
+  margin: auto;
   overflow:hidden;
+  height:600px;
 }
 
 h1 {
   font-family: 'Rokkitt', serif;
   font-weight: normal;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   color: #526563;
-  font-size: 28pt;
+  font-size: 200%;
+  margin:10px;
 }
 
 h1.blue {
+  position: relative;
+  text-align: center;
+  top: 200%;
   font-family: 'Rokkitt', serif;
-  font-weight: normal;
-  margin-right: 20px;
-  margin-left: 20px;
-  color: #334860;
-  font-size: 28pt;
-  line-height:10px;
+  margin: 5px;
+  font-size: 150%;
+  color: #354A60;
+  z-index: 99;
 }
 
 h2 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 15pt;
+  font-size: 100%;
   text-align: center;
   color: #709B4B;
   font-weight: bold;
 }
 h2.blue {
-  font-family: 'Rokkitt', serif;
-  font-size: 15pt;
+  position: relative;
   text-align: center;
-  color: #334860;
-  line-height:10px;
+  top: 210%;
+  font-family: 'Rokkitt', serif;
+  margin: 5px;
+  font-size: 100%;
+  color: #354A60;
+  z-index: 99;
 }
 
 p {
@@ -96,41 +102,44 @@ hr {
 
 #trees {
   position: absolute;
-  width: 900px;
-  margin-left: -450px;
-  margin-right: -450px;
-  display: block;
-  left: 50%;
-  right: 50%;
-  z-index: 2;
+  top: 0px;
+  background-image: url("./assets/trees.png");
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  /*height: 570px;*/
+  z-index: 3;
 }
 
 #lake {
-  width: 900px;
   position: absolute;
-  margin-right: -450px;
-  margin-left: -450px;
-  right: 50%;
-  left: 50%;
-  display: block;
-  z-index: 1
+  top: 0px;
+  background-image: url("./assets/lake.png");
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  z-index: 2;
 }
 
 #mountains {
-  width: 900px;
   position: absolute;
-  margin-right: -450px;
-  margin-left: -450px;
-  right: 50%;
-  left: 50%;
-  display: block;
-  z-index: 0
+  background-image: url("./assets/mountains.jpg");
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  
 }
 
 #hero {
   position: relative;
-  z-index: 3;
-  width: 225px;
+  z-index: 100;
+  width: 20%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -140,27 +149,29 @@ hr {
 #date {
   position: relative;
   z-index: 3;
-  width: 150px;
+  width: 15%;
   top: 20px;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
+
 #aiga_div {
-  background-color: #536563;
-  padding-top:2px;
-  width:100%;
   position: absolute;
-  bottom:0;
-  z-index:300;
+  z-index: 3;
+  width: 30%;
+  bottom: 30%;
+  right:0;
+  float:right;
+  margin-right: -40px
+  display: block;
 }
 
-#aiga {
-  display: block;
-  margin: 0 auto;
+
+.aiga {
   padding: 3px;
-  width: 230px;
+  width: 65%;
 }
 
 #button_lines {
@@ -255,3 +266,250 @@ hr {
   width:100%;
   height: 30px;
 }
+
+
+@media (min-width: 800px){
+  
+  .facebook {
+    float:left;
+    content:url("assets/f.png")
+  }
+  
+  .twitter {
+    position:relative;
+    top:2px;
+    content:url("assets/t.png")
+  }
+  #social {
+    position: absolute;
+    top:5px;
+    right:15px;
+    right:90px;
+  }
+  .register {
+  
+    float:left;
+  }
+}
+
+/*---------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px){
+
+
+  
+  
+
+  #home {
+    position:relative;
+    top:50px;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    background-color: #2C4947;
+    height: 50px;
+    width: 100%;
+    z-index:10;
+    position: fixed;
+  }
+
+  #logo {
+    width: 175px;
+    margin-left: 5px;
+    padding: 5px;
+  }
+
+ 
+
+  #hero_wrapper {
+    position:relative;
+    height: 550px;
+    overflow:hidden;
+  }
+
+  h1 {
+    font-family: 'Rokkitt', serif;
+    font-weight: normal;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #526563;
+    font-size: 28pt;
+  }
+
+  h1.blue {
+    font-family: 'Rokkitt', serif;
+    font-weight: normal;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #334860;
+    font-size: 28pt;
+    line-height:10px;
+  }
+
+  h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15pt;
+    text-align: center;
+    color: #709B4B;
+    font-weight: bold;
+  }
+  h2.blue {
+    font-family: 'Rokkitt', serif;
+    font-size: 15pt;
+    text-align: center;
+    color: #334860;
+    line-height:10px;
+  }
+
+  p {
+    font-family: 'Rokkitt', serif;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #526563;
+    font-size: 16pt;
+  }
+
+  hr {
+    margin: 20px;
+    opacity: 0.5;
+  }
+
+  #trees {
+    position: absolute;
+    width: 900px;
+    margin-left: -450px;
+    margin-right: -450px;
+    display: block;
+    left: 50%;
+    right: 50%;
+    z-index: 2;
+  }
+
+  #lake {
+    width: 900px;
+    position: absolute;
+    margin-right: -450px;
+    margin-left: -450px;
+    right: 50%;
+    left: 50%;
+    display: block;
+    z-index: 1
+  }
+
+  #mountains {
+    width: 900px;
+    position: absolute;
+    margin-right: -450px;
+    margin-left: -450px;
+    right: 50%;
+    left: 50%;
+    display: block;
+    z-index: 0
+  }
+
+  #hero {
+    position: relative;
+    z-index: 3;
+    width: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 40px;
+  }
+
+  #date {
+    position: relative;
+    z-index: 3;
+    width: 150px;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .menu {
+    position:absolute;
+    top: 5px;
+    right: 30px;
+    padding: 5px;
+    
+  }
+  .mobile {
+    position:relative;
+    width:45px;
+    content:url("assets/menu.png")
+    
+  }
+}
+
+
+
+/*#aiga_div {
+background-color: #536563;
+padding-top:2px;
+width:100%;
+position: absolute;
+bottom:0;
+z-index:300;
+}
+
+#aiga {
+display: block;
+margin: 0 auto;
+padding: 3px;
+width: 230px;
+}
+*/
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+/*@media (min-width: 675px){*/
+
+/*need to set home wrapper same top as height of header for fixed head to work.*/
