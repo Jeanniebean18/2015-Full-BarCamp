@@ -12,6 +12,7 @@ html {
   width: 100%;
   overflow: hidden;
 }
+
 body {
   margin: 0;
 }
@@ -40,7 +41,8 @@ header {
 
 #hero_wrapper {
   position:relative;
-  height: 500px;
+  height: 550px;
+  overflow:hidden;
 }
 
 h1 {
@@ -148,9 +150,10 @@ hr {
 #aiga_div {
   background-color: #536563;
   padding-top:2px;
-  height:61px;
   width:100%;
-  position: relative;
+  position: absolute;
+  bottom:0;
+  z-index:300;
 }
 
 #aiga {
