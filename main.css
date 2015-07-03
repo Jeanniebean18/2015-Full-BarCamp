@@ -29,7 +29,7 @@ header {
   width: 175px;
   position:absolute;
   top:0;
-  left:5px;
+  left:10px;
   padding: 5px;
 }
 
@@ -148,7 +148,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  top: 60px;
+  top: 50px;
 }
 
 #date {
@@ -162,22 +162,7 @@ hr {
 }
 
 
-#aiga_div {
-  position: absolute;
-  z-index: 3;
-  width: 30%;
-  bottom: 30%;
-  right:0;
-  float:right;
-  margin-right: -40px
-  display: block;
-}
 
-
-.aiga {
-  padding: 3px;
-  width: 65%;
-}
 
 #button_lines {
   position: absolute;
@@ -190,7 +175,7 @@ hr {
 
 #bird_section {
   position: relative;
-  width: 43%;
+  width: 40%;
   float: left;
   margin: 8% 5% 8% 5%;
 }
@@ -269,7 +254,7 @@ hr {
 .dashes {
   border-top: 3px dashed;
   margin: 20px;
-  color: #536563;
+  color: #E6E7E8;
 }
 
 .line_break {
@@ -278,7 +263,8 @@ hr {
   height: 30px;
 }
 
-
+/*only show in full one CSS*/
+/*---------------------------------*/
 @media (min-width: 800px){
 
 .facebook {
@@ -299,8 +285,27 @@ hr {
 }
 .register {
     float:left;
+}
+
+#aiga_container {
+    position:relative;
+    bottom:-5%;
+    right:5%;
+    display: block;
+    z-index: 3;
+    width: 50%;
+    float:right;
+  }
+
+  .aiga1 {
+    content:url("assets/aiga.png");
+    float: right;
+    padding: 3px;
+    width: 40%;
   }
 }
+
+
 /*mobile CSS*/
 /*---------------------------------*/
 
@@ -312,11 +317,11 @@ hr {
     min-height: 100%;
     width: 100%;
     overflow: hidden;
-  }
+}
 
   body {
     margin: 0;
-  }
+}
 
 #logo {
     width: 175px;
@@ -446,8 +451,36 @@ hr {
     content:url("assets/menu.png")
     
   }
+  
+#aiga_mobile {
+    background-color: #536563;
+    height:12%;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    z-index:400;
+    
+}
+.aiga {
+    content:url("assets/aiga.png");
+    width: 210px;
+    position:relative;
+    top:10%;
+    bottom:10%;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+  }
 }
 
+
+
+/*#aiga {
+  display: block;
+  margin: 0 auto;
+  padding: 3px;
+  width: 230px;
+}*/
 
 
 /*#aiga_div {
