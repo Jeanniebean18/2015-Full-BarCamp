@@ -93,7 +93,6 @@ h2 {
   text-align: center;
   color: #709B4B;
   font-weight: bold;
-  border:3px solid red;
 }
 h2.blue {
   position: relative;
@@ -575,9 +574,10 @@ hr {
 
 #bird_section {
     position: relative;
-    width:100%;
     margin-left: auto;
     margin-right: auto;
+    display:block;
+    width:100%;
     margin-top:5%;
     margin-bottom:3%;
 }
