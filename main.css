@@ -29,7 +29,7 @@ header {
   background-color: #2C4947;
   height: 50px;
   width: 100%;
-  z-index:200;
+  z-index:1000;
   position: fixed;
 }
 
@@ -54,8 +54,9 @@ header {
 .part2_container {
   position:relative;
   display:block;
-  width:auto;
-  margin:5%;
+  width:100%;
+  padding:5%;
+  
   
   
 }
@@ -63,7 +64,6 @@ header {
   position:relative;
   margin-top:8%;
   display: block;
-  
   overflow:hidden;
   height:auto;
 }
@@ -74,7 +74,7 @@ header {
   background-repeat: repeat;
   height:auto;
   width:100%;
-  border: 1px solid red;
+ 
 }
 
 .event_schedule {
@@ -245,24 +245,24 @@ p {
   display: block;
 }
 
-#button_lines {
-  position: absolute;
-  top:25%;
-  display: block;
-  width: 100%;
-  min-width:300px;
-  margin-right: auto;
-  margin-left: auto;
-}
+ .button_lines {
+   content: url("assets/buttonLines.png");
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    display: block;
+    
+  }
 
-#bird_section {
-  position: relative;
-  width: 40%;
-  float: left;
-  margin: 0% 5% 8% 5%;
-}
+  #bird_section {
+    position:relative;
+    display:block;
+    width:45%;
+    float:left;
+    margin-bottom:20px;
+  }
 
-#bird {
+  #bird {
   width: 13%;
   display: block;
   margin-right:auto;
@@ -272,12 +272,11 @@ p {
 }
 
 .bird_copy {
-  margin-top:4%;
   display:block;
   position: relative;
-  width:50%;
+  width:55%;
   overflow:hidden;
-  
+  float:left;
 }
 
 #register_today {
@@ -672,21 +671,24 @@ p {
     margin-left:auto;
   }
   
-  #button_lines {
-    display: block;
-    position: absolute;
+ .button_lines {
+   content: url("assets/buttonLines.png");
     width: 100%;
+    position: absolute;
+    top: 20px;
+    display: block;
+    
   }
 
   #bird_section {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    position:relative;
     display:block;
-    width:100%;
-    margin-top:5%;
-    margin-bottom:3%;
+    width:400px;
+    float:none;
+    margin-left:auto;
+    margin-right:auto;
   }
+
 
   #bird {
     display: block;
@@ -695,6 +697,7 @@ p {
     margin-right: auto;
     width: 50px;
   }
+  
   .bird_copy {
     position: relative;
     width:100%;
@@ -721,18 +724,11 @@ p {
     font-weight: bold;
   }
 
-  #dashes {
-    margin: 5px;
-    margin-top: 75px;
-    margin-bottom: 75px;
-    background-image: url("./assets/part_2/dash-horizontal.png");
-    height: 5px;
-  }
-  
   .mobile_head {
     display:block;
     width:100%;
     margin-left: 5%;
+    
   }
 
   .badges {
