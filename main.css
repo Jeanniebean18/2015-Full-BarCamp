@@ -10,10 +10,12 @@ html {
   top:50px;
   width: 100%;
   overflow: hidden;
+  
 }
 
 body {
   margin: 0;
+  
 }
 
 a {
@@ -45,14 +47,44 @@ header {
   margin: auto;
   margin: auto;
   overflow:hidden;
-  height:650px;
+  height:auto;
+  
 }
 
 .part2_container {
   position:relative;
-  margin:auto;
+  display:block;
   width:auto;
+  margin:5%;
   
+  
+}
+.part3_container {
+  position:relative;
+  display:block;
+  width:100%;
+  height:200px;
+  border:1px solid red;
+  overflow:hidden;
+}
+
+.wood {
+  position:absolute;
+  background-image: url("assets/board.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center center;
+  width:100%;
+}
+
+.event_schedule {
+  position:relative;
+  display:block;
+  content:url("assets/schedule.png");
+  width:40%;
+  margin:5% auto 5% auto;
+  border:1px solid;
 }
 
 h1 {
@@ -74,6 +106,20 @@ h1.blue {
   font-size: 220%;
   color: #354A60;
   z-index: 99;
+  line-height:40px;
+  margin-bottom: 40px;
+}
+
+h1.kaneko {
+  position: relative;
+  text-align: center;
+  font-family: 'Rokkitt', serif;
+  margin: 5px;
+  font-size: 220%;
+  color: #354A60;
+  z-index: 99;
+  
+  
 }
 
 h1.blue2 {
@@ -94,6 +140,7 @@ h2 {
   color: #709B4B;
   font-weight: bold;
 }
+
 h2.blue {
   position: relative;
   text-align: center;
@@ -112,11 +159,6 @@ p {
   line-height: 1.5;
   color: #526563;
   font-size: 120%;
-}
-
-hr {
-  margin: 20px;
-  opacity: 0.5;
 }
 
 #trees {
@@ -173,8 +215,6 @@ hr {
   margin-right: auto;
   display: block;
 }
-
-
 
 #button_lines {
   position: absolute;
@@ -248,7 +288,8 @@ hr {
 
 .center {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10%;
+  color: #354A60;
 }
 
 .details {
@@ -276,7 +317,7 @@ hr {
   display:block;
   float:left;
   width: 25%;
-  border: 3px solid;
+  
 }
 
 .creative {
@@ -284,7 +325,7 @@ hr {
   display:block;
   float:left;
   width: 25%;
-  border: 3px solid;
+  
 }
 
 .technology {
@@ -292,7 +333,7 @@ hr {
   display:block;
   float:left;
   width: 25%;
-  border: 3px solid;
+  
 }
 
 .kitchen_sink {
@@ -300,30 +341,45 @@ hr {
   display:block;
   float:left;
   width: 25%;
-  border: 3px solid;
+  
 }
 
 #badges {
   position: relative;
   width:100%;
-  border:3px solid red;
+ 
 }
 
 .ebadge {
-  content:url("assets/b1.png");
+  content:url("assets/b2.png");
   width: 50%;
   margin-right: auto;
   margin-left: auto;
-  border:3px solid red;
-
+  margin-bottom:15px;
 }
+
 .cbadge {
+  content:url("assets/b3.png");
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom:15px;
+}
+
+.tbadge {
   content:url("assets/b1.png");
   width: 50%;
   margin-right: auto;
   margin-left: auto;
-  border:3px solid red;
+  margin-bottom:15px;
+}
 
+.kbadge {
+  content:url("assets/b4.png");
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom:15px;
 }
 
 .facebook {
@@ -377,57 +433,8 @@ hr {
   width: 40%;
 }
   
-/*ipad views badges*/
-  
-  
-@media (min-width: 900px) {
 
-  .entrepreneur {
-    position: relative;
-    display:block;
-    float:left;
-    width: 25%;
-    border: 3px solid;
-  }
-
-  .creative {
-    position: relative;
-    display:block;
-    float:left;
-    width: 25%;
-    border: 3px solid;
-  }
-
-  .technology {
-    position: relative;
-    display:block;
-    float:left;
-    width: 25%;
-    border: 3px solid;
-  }
-
-  .kitchen_sink {
-    position: relative;
-    display:block;
-    float:left;
-    width: 25%;
-    border: 3px solid;
-  }
-
-  #badges {
-    position: relative;
-    width:100%;
-    border:3px solid red;
-  }
-    
-}
-/*ipad views badges*/
-  
-  
-  
-  
-  
-/*mobile CSS*/
+/*ipad/mobile CSS*/
 /*----------------------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 900px){
@@ -466,7 +473,8 @@ hr {
     margin-right: 20px;
     margin-left: 20px;
     color: #526563;
-    font-size: 28pt;
+    font-size: 25pt;
+    line-height:35px;
   }
 
   h1.blue {
@@ -475,9 +483,11 @@ hr {
     margin-right: 20px;
     margin-left: 20px;
     color: #334860;
-    font-size: 22pt;
-    line-height:22px;
+    font-size: 25pt;
+    line-height:35px;
   }
+  
+  
 
   h2 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -730,7 +740,12 @@ hr {
     display:block;
     float:left;
     width: 50%;
-    border: 3px solid;
+    border-left: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding:2% 2% 5% 2%;
+    
   }
 
   .creative {
@@ -738,8 +753,12 @@ hr {
     display:block;
     float:left;
     width: 50%;
-    border: 3px solid;
-    ;
+    border-left: 1px solid #BCBEC0;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding:2% 2% 5% 2%;
+    
   }
 
   .technology {
@@ -747,7 +766,11 @@ hr {
     display:block;
     float:left;
     width: 50%;
-    border: 3px solid;
+    border-left: 1px solid #ffffff;
+    border-top: 1px solid #BCBEC0;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding:2% 2% 5% 2%;
   }
 
   .kitchen_sink {
@@ -755,123 +778,60 @@ hr {
     display:block;
     float:left;
     width: 50%;
-    border: 3px solid;
+    border-left: 1px solid #BCBEC0;
+    border-top: 1px solid #BCBEC0;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding:2% 2% 5% 2%;
+    
   }
-
   #badges {
     position: relative;
     width:100%;
-    border:3px solid red;
-  }
-
-  .entrepreneur {
-    position: relative;
-    width: 100%;
-    border: 3px solid;
-  }
-
-  .creative {
-    position: relative;
-    width: 100%;
-    border: 3px solid;
-  }
-
-  .technology {
-    position: relative;
-    width: 100%;
-    border: 3px solid;
-  }
-
-  .kitchen_sink {
-    position: relative;
-    width: 100%;
-    border: 3px solid;
-  }
-
-  #badges {
-    position: relative;
-    width:100%;
-    border:3px solid red;
-  }
-
-
-  .entrepreneur {
-    position: relative;
-    display:block;
-    float:left;
-    width: 50%;
-    border: 3px solid;
-  }
-
-  .creative {
-    position: relative;
-    display:block;
-    float:left;
-    width: 50%;
-    border: 3px solid;
- 
-  }
-
-  .technology {
-    position: relative;
-    display:block;
-    float:left;
-    width: 50%;
-    border: 3px solid;
-  }
-
-  .kitchen_sink {
-    position: relative;
-    display:block;
-    float:left;
-    width: 50%;
-    border: 3px solid;
-  }
-
-  #badges {
-    position: relative;
-    width:100%;
-    border:3px solid red;
+    
   }
 }
 
-@media (max-width: 500px) {
-
-
-  #badges {
-    position: relative;
-    width:100%;
-    border:3px solid red;
-  }
+@media (max-width: 520px) {
 
   .entrepreneur {
     position: relative;
+    display:block;
     width: 100%;
-    border: 3px solid;
+    border-bottom: 1px solid #BCBEC0;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
   }
 
   .creative {
     position: relative;
+    display:block;
     width: 100%;
-    border: 3px solid;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
   }
 
   .technology {
     position: relative;
     width: 100%;
-    border: 3px solid;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
   }
 
   .kitchen_sink {
     position: relative;
     width: 100%;
-    border: 3px solid;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
   }
 
   #badges {
     position: relative;
+    display: block;
     width:100%;
-    border:3px solid red;
+    padding:5%;
+    
   }
 }
 
