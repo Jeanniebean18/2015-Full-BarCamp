@@ -128,7 +128,6 @@ hr {
   background-position: center center;
   background-size: cover;
   width: 100%;
-  /*height: 570px;*/
   z-index: 3;
 }
 
@@ -212,7 +211,6 @@ hr {
   
 }
 
-
 #register_today {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: block;
@@ -253,8 +251,6 @@ hr {
   margin-bottom: 50px;
 }
 
-
-
 .details {
   color: #774C2E;
   text-align: center;
@@ -276,32 +272,33 @@ hr {
 }
 
 .entrepreneur {
-  position: absolute;
+  position: relative;
+  display:block;
+  float:left;
   width: 25%;
-  /*float:left;*/
   border: 3px solid;
 }
 
 .creative {
-  position: absolute;
-  top:0;
-  left:25%;
+  position: relative;
+  display:block;
+  float:left;
   width: 25%;
   border: 3px solid;
 }
 
 .technology {
-  position: absolute;
-  top:0;
-  left:50%;
+  position: relative;
+  display:block;
+  float:left;
   width: 25%;
   border: 3px solid;
 }
 
 .kitchen_sink {
-  position: absolute;
-  top:0;
-  left:75%;
+  position: relative;
+  display:block;
+  float:left;
   width: 25%;
   border: 3px solid;
 }
@@ -318,7 +315,7 @@ hr {
   margin-right: auto;
   margin-left: auto;
   border:3px solid red;
- 
+
 }
 .cbadge {
   content:url("assets/b1.png");
@@ -326,107 +323,153 @@ hr {
   margin-right: auto;
   margin-left: auto;
   border:3px solid red;
-  
+
 }
 
-/*only show in full one CSS*/
-/*---------------------------------*/
-@media (min-width: 900px){
-
 .facebook {
-    float:right;
-    margin-right:5%;
-    content:url("assets/f.png")
+  float:right;
+  display:block;
+  margin-right:5%;
+  content:url("assets/f.png")
     
 }
   
 .twitter {
-    position:relative;
-    top:2px;
-    float:right;
-    content:url("assets/t.png")
+  position:relative;
+  display:block;
+  top:2px;
+  float:right;
+  content:url("assets/t.png")
     
 }
 #social {
-    position: absolute;
-    top:9%;
-    right:5%;
-    width: 175px;
+  position: absolute;
+  display:block;
+  top:9%;
+  right:5%;
+  width: 175px;
     
 }
 .register {
-    float:left;
-    position:relative;
-    top:10px;
-    left:5px;
+  float:left;
+  display:block;
+  position:relative;
+  top:10px;
+  left:5px;
 }
 
 #aiga_container {
-    position:relative;
-    bottom:-5%;
-    right:5%;
-    display: block;
-    z-index: 3;
-    width: 50%;
-    float:right;
+  position:relative;
+  display:block;
+  bottom:-5%;
+  right:5%;
+  display: block;
+  z-index: 3;
+  width: 50%;
+  float:right;
 }
 
 .aiga1 {
-    content:url("assets/aiga.png");
-    float: right;
-    padding: 3px;
-    width: 40%;
-  }
-  
-
-  
-  
+  content:url("assets/aiga.png");
+  display:block;
+  float: right;
+  padding: 3px;
+  width: 40%;
 }
+  
+/*ipad views badges*/
+  
+  
+@media (min-width: 900px) {
 
+  .entrepreneur {
+    position: relative;
+    display:block;
+    float:left;
+    width: 25%;
+    border: 3px solid;
+  }
 
+  .creative {
+    position: relative;
+    display:block;
+    float:left;
+    width: 25%;
+    border: 3px solid;
+  }
+
+  .technology {
+    position: relative;
+    display:block;
+    float:left;
+    width: 25%;
+    border: 3px solid;
+  }
+
+  .kitchen_sink {
+    position: relative;
+    display:block;
+    float:left;
+    width: 25%;
+    border: 3px solid;
+  }
+
+  #badges {
+    position: relative;
+    width:100%;
+    border:3px solid red;
+  }
+    
+}
+/*ipad views badges*/
+  
+  
+  
+  
+  
 /*mobile CSS*/
 /*----------------------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 900px){
 
-#home {
+  #home {
     position:relative;
     top:50px;
     min-height: 100%;
     width: 100%;
     overflow: hidden;
-}
+  }
 
   body {
     margin: 0;
-}
+  }
 
-#logo {
+  #logo {
     width: 175px;
     margin-left: 5px;
     padding: 5px;
-}
+  }
 
-#hero_wrapper {
+  #hero_wrapper {
     position:relative;
     height: 550px;
     overflow:hidden;
-}
+  }
 
-.register {
-  display:none;
+  .register {
+    display:none;
   }
   
-h1 {
+  h1 {
     font-family: 'Rokkitt', serif;
     font-weight: normal;
     margin-right: 20px;
     margin-left: 20px;
     color: #526563;
     font-size: 28pt;
-}
+  }
 
-h1.blue {
+  h1.blue {
     font-family: 'Rokkitt', serif;
     font-weight: normal;
     margin-right: 20px;
@@ -434,36 +477,36 @@ h1.blue {
     color: #334860;
     font-size: 22pt;
     line-height:22px;
-}
+  }
 
-h2 {
+  h2 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 15pt;
     text-align: center;
     color: #709B4B;
     font-weight: bold;
-}
+  }
   
-h2.blue {
+  h2.blue {
     font-family: 'Rokkitt', serif;
     font-size: 12pt;
     text-align: center;
     color: #334860;
     line-height:10px;
-}
+  }
 
 
-h1.blue2 {
-  position: relative;
-  text-align: left;
-  font-family: 'Rokkitt', serif;
-  margin-right: 25%;
-  margin-left: ;
-  font-size: 220%;
-  color: #354A60;
-  z-index: 99;
-}
-p {
+  h1.blue2 {
+    position: relative;
+    text-align: left;
+    font-family: 'Rokkitt', serif;
+    margin-right: 25%;
+    margin-left: ;
+    font-size: 220%;
+    color: #354A60;
+    z-index: 99;
+  }
+  p {
     font-family: 'Rokkitt', serif;
     margin-right: 8%;
     margin-left: 8%;
@@ -471,14 +514,39 @@ p {
     line-height: 1.5;
     color: #526563;
     font-size: 16pt;
-}
+  }
 
-hr {
+  hr {
     margin: 20px;
     opacity: 0.5;
-}
+  }
 
-#trees {
+  .facebook {
+    display:none;
+    
+  }
+
+  .twitter {
+    display:none;
+    
+  }
+  #social {
+    display:none;
+    
+  }
+  .register {
+    display:none;
+  }
+
+  #aiga_container {
+    display:none;
+  }
+
+  .aiga1 {
+    display:none;
+  }
+
+  #trees {
     position: absolute;
     width: 900px;
     margin-left: -450px;
@@ -487,9 +555,9 @@ hr {
     left: 50%;
     right: 50%;
     z-index: 2;
-}
+  }
 
-#lake {
+  #lake {
     width: 900px;
     position: absolute;
     margin-right: -450px;
@@ -498,9 +566,9 @@ hr {
     left: 50%;
     display: block;
     z-index: 1
-}
+  }
 
-#mountains {
+  #mountains {
     width: 900px;
     position: absolute;
     margin-right: -450px;
@@ -509,9 +577,9 @@ hr {
     left: 50%;
     display: block;
     z-index: 0
-}
+  }
 
-#hero {
+  #hero {
     position: relative;
     z-index: 3;
     width: 225px;
@@ -519,9 +587,9 @@ hr {
     margin-right: auto;
     display: block;
     top: 40px;
-}
+  }
 
-#date {
+  #date {
     position: relative;
     z-index: 3;
     width: 150px;
@@ -529,23 +597,23 @@ hr {
     margin-left: auto;
     margin-right: auto;
     display: block;
-}
+  }
   
-.menu {
+  .menu {
     position:absolute;
     top: 5px;
     right: 30px;
     padding: 5px;
     
-}
-.mobile {
+  }
+  .mobile {
     position:relative;
     width:45px;
     content:url("assets/menu.png")
     
   }
   
-#aiga_mobile {
+  #aiga_mobile {
     background-color: #536563;
     height:12%;
     width:100%;
@@ -553,8 +621,8 @@ hr {
     bottom:0;
     z-index:400;
     
-}
-.aiga {
+  }
+  .aiga {
     content:url("assets/aiga.png");
     width: 210px;
     position:relative;
@@ -565,14 +633,13 @@ hr {
     margin-left:auto;
   }
   
-
-#button_lines {
+  #button_lines {
     display: block;
     position: absolute;
     width: 100%;
   }
 
-#bird_section {
+  #bird_section {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -580,23 +647,23 @@ hr {
     width:100%;
     margin-top:5%;
     margin-bottom:3%;
-}
+  }
 
-#bird {
+  #bird {
     display: block;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 50px;
-}
-.bird_copy {
-  position: relative;
-  width:100%;
-  margin-right:auto;
-  margin-left:auto;
-}
+  }
+  .bird_copy {
+    position: relative;
+    width:100%;
+    margin-right:auto;
+    margin-left:auto;
+  }
 
-#register_bird {
+  #register_bird {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: block;
     margin: 0 auto;
@@ -613,85 +680,202 @@ hr {
     border: 0px solid;
     z-index: 1;
     font-weight: bold;
-}
+  }
 
-#dashes {
+  #dashes {
     margin: 5px;
     margin-top: 75px;
     margin-bottom: 75px;
     background-image: url("./assets/part_2/dash-horizontal.png");
     height: 5px;
-}
+  }
   
+  .mobile_head {
+    display:block;
+    width:100%;
+    margin-left: 5%;
+  }
 
-  
-.mobile_head {
-  display:block;
-  width:100%;
-  margin-left: 5%;
-  
-  
+  .badges {
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+  }
+
+  .details {
+    color: #774C2E;
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 5px;
+    font-size: 12pt;
+  }
+
+  .dashes {
+    border-top: 3px dashed;
+    margin: 20px;
+    color: #E6E7E8;
+  }
+
+  .line_break {
+    display: block;
+    width:100%;
+    height: 30px;
+  }
+
+  .entrepreneur {
+    position: relative;
+    display:block;
+    float:left;
+    width: 50%;
+    border: 3px solid;
+  }
+
+  .creative {
+    position: relative;
+    display:block;
+    float:left;
+    width: 50%;
+    border: 3px solid;
+    ;
+  }
+
+  .technology {
+    position: relative;
+    display:block;
+    float:left;
+    width: 50%;
+    border: 3px solid;
+  }
+
+  .kitchen_sink {
+    position: relative;
+    display:block;
+    float:left;
+    width: 50%;
+    border: 3px solid;
+  }
+
+  #badges {
+    position: relative;
+    width:100%;
+    border:3px solid red;
+  }
+
+  .entrepreneur {
+    position: relative;
+    width: 100%;
+    border: 3px solid;
+  }
+
+  .creative {
+    position: relative;
+    width: 100%;
+    border: 3px solid;
+  }
+
+  .technology {
+    position: relative;
+    width: 100%;
+    border: 3px solid;
+  }
+
+  .kitchen_sink {
+    position: relative;
+    width: 100%;
+    border: 3px solid;
+  }
+
+  #badges {
+    position: relative;
+    width:100%;
+    border:3px solid red;
+  }
+
+
+  .entrepreneur {
+    position: relative;
+    display:block;
+    float:left;
+    width: 50%;
+    border: 3px solid;
+  }
+
+  .creative {
+    position: relative;
+    display:block;
+    float:left;
+    width: 50%;
+    border: 3px solid;
+ 
+  }
+
+  .technology {
+    position: relative;
+    display:block;
+    float:left;
+    width: 50%;
+    border: 3px solid;
+  }
+
+  .kitchen_sink {
+    position: relative;
+    display:block;
+    float:left;
+    width: 50%;
+    border: 3px solid;
+  }
+
+  #badges {
+    position: relative;
+    width:100%;
+    border:3px solid red;
+  }
 }
 
-.badges {
-  margin-left: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-right: auto;
-  display: block;
-  width: 200px;
+@media (max-width: 500px) {
+
+
+  #badges {
+    position: relative;
+    width:100%;
+    border:3px solid red;
+  }
+
+  .entrepreneur {
+    position: relative;
+    width: 100%;
+    border: 3px solid;
+  }
+
+  .creative {
+    position: relative;
+    width: 100%;
+    border: 3px solid;
+  }
+
+  .technology {
+    position: relative;
+    width: 100%;
+    border: 3px solid;
+  }
+
+  .kitchen_sink {
+    position: relative;
+    width: 100%;
+    border: 3px solid;
+  }
+
+  #badges {
+    position: relative;
+    width:100%;
+    border:3px solid red;
+  }
 }
 
-.details {
-  color: #774C2E;
-  text-align: center;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin: 5px;
-  font-size: 12pt;
-}
 
-.dashes {
-  border-top: 3px dashed;
-  margin: 20px;
-  color: #E6E7E8;
-}
-
-.line_break {
-  display: block;
-  width:100%;
-  height: 30px;
-}
-
-  
-  
-}
-
-
-
-/*#aiga {
-  display: block;
-  margin: 0 auto;
-  padding: 3px;
-  width: 230px;
-}*/
-
-
-/*#aiga_div {
-background-color: #536563;
-padding-top:2px;
-width:100%;
-position: absolute;
-bottom:0;
-z-index:300;
-}
-
-#aiga {
-display: block;
-margin: 0 auto;
-padding: 3px;
-width: 230px;
-}
-*/
 
 
 
