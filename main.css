@@ -56,9 +56,6 @@ header {
   display:block;
   width:100%;
   padding:5%;
-  
-  
-  
 }
 .part3_container {
   position:relative;
@@ -66,6 +63,43 @@ header {
   display: block;
   overflow:hidden;
   height:auto;
+  
+}
+
+.part4_container {
+  position:relative;
+  display: block;
+  overflow:hidden;
+  height:auto;
+  background-color:#C9ECF9;
+  
+}
+
+.sky {
+  position: relative;
+  height: 800px;
+  background: url('assets/faqSky.png'), url('assets/clouds.png');
+  background-position: 50% 50%;
+  background-repeat:no-repeat;
+  background-size: 100%%;
+    
+}
+  
+.sky_copy {
+  position:absolute;
+  top:20%;
+  left:5%;
+  display: block;
+  width:40%;
+    
+    
+}
+.tower {
+  content:url('assets/tower.png');
+  position: absolute;
+  bottom:0;
+  right:0;
+  width:60%;
 }
 
 .wood {
@@ -82,18 +116,19 @@ header {
   display:block;
   content:url("assets/schedule.png");
   width:50%;
-  margin:50px auto 50px auto;
-  
+  max-width:500px;
+  margin-right:auto;
+  margin-left:auto;
+  margin-bottom:10%;
 }
 
 .event_container {
   position:relative;
   display:block;
   width:90%;
-  border: 1px solid;
+  
   margin-left:auto;
   margin-right:auto;
-  
 }
 
 .friday_container {
@@ -102,7 +137,7 @@ header {
   float:left;
   width:50%;
   overflow:hidden;
-  border: 1px solid red;
+  
 }
 
 .saturday_container {
@@ -111,8 +146,9 @@ header {
   width:50%;
   overflow:hidden;
   float:left;
-  border: 1px solid red;
+  
 }
+
 
 h1 {
   font-family: 'Rokkitt', serif;
@@ -122,6 +158,16 @@ h1 {
   display: block;
   color: #526563;
   font-size: 200%;
+  margin:10px;
+}
+
+h5 {
+  font-family: 'Rokkitt', serif;
+  font-weight: normal;
+  text-align:center;
+  display: block;
+  color: white;
+  font-size: 220%;
   margin:10px;
 }
 
@@ -157,8 +203,6 @@ h1.kaneko {
   font-size: 220%;
   color: #354A60;
   z-index: 99;
-  
-  
 }
 
 h1.blue2 {
@@ -180,6 +224,20 @@ h2 {
   font-weight: bold;
 }
 
+h6 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+h6::first-line {
+  
+  font-size: 20px;
+  line-height:25px;
+}
+
 h2.blue {
   position: relative;
   text-align: center;
@@ -194,6 +252,14 @@ h3.white {
   font-family: 'Rokkitt', serif;
   color:white;
   text-align: left;
+}
+
+h4.white {
+  font-family: 'Rokkitt', serif;
+  color:white;
+  text-align: center;
+  line-height:0;
+  margin-top:-7px;
 }
 
 p {
@@ -245,24 +311,24 @@ p {
   display: block;
 }
 
- .button_lines {
-   content: url("assets/buttonLines.png");
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    display: block;
+.button_lines {
+  content: url("assets/buttonLines.png");
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  display: block;
     
-  }
+}
 
-  #bird_section {
-    position:relative;
-    display:block;
-    width:45%;
-    float:left;
-    margin-bottom:20px;
-  }
+#bird_section {
+  position:relative;
+  display:block;
+  width:45%;
+  float:left;
+  margin-bottom:20px;
+}
 
-  #bird {
+#bird {
   width: 13%;
   display: block;
   margin-right:auto;
@@ -460,7 +526,29 @@ p {
   padding: 3px;
   width: 40%;
 }
-  
+
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border: 3px solid #D1582B;
+  border-radius: 100%;
+  float: left;
+  text-align: center;
+  margin: 3px 30px 20px 0;
+  color: #fff;
+}
+
+ul {
+      list-style-image: url('assets/plus.png');
+      
+}
+li {
+  font-family: 'Rokkitt', serif;
+  color:#6E4B24;
+  font-size:220%;
+  line-height:60px;
+}
 
 /*ipad/mobile CSS*/
 /*----------------------------------------------------------------------------------------------------------------*/
@@ -508,11 +596,35 @@ p {
   h1.blue {
     font-family: 'Rokkitt', serif;
     font-weight: normal;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
     color: #334860;
     font-size: 25pt;
     line-height:35px;
+  }
+  
+  h5 {
+    font-family: 'Rokkitt', serif;
+    font-weight: normal;
+    text-align:center;
+    display: block;
+    color: #ffffff;
+    font-size: 220%;
+    margin:10px;
+  }
+  
+  h6 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: #ffffff;
+    font-weight: normal;
+  }
+  
+  h6::first-line {
+    
+    font-size: 20px;
+    line-height:25px;
   }
   
   
@@ -671,8 +783,8 @@ p {
     margin-left:auto;
   }
   
- .button_lines {
-   content: url("assets/buttonLines.png");
+  .button_lines {
+    content: url("assets/buttonLines.png");
     width: 100%;
     position: absolute;
     top: 20px;
@@ -820,7 +932,6 @@ p {
     position:relative;
     display:block;
     width:90%;
-    border: 1px solid;
     margin-left:auto;
     margin-right:auto;
   
@@ -893,8 +1004,6 @@ p {
     display:block;
     content:url("assets/schedule.png");
     width:80%;
-    margin:50px auto 50px auto;
-    border:1px solid;
   }
   
   
